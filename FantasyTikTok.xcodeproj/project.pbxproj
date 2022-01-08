@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31A1ECD2B2D90631290FECC1 /* Pods_FantasyTikTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7512F886AD7F9FC24EEB953B /* Pods_FantasyTikTok.framework */; };
+		A20802702789AE26008461DA /* FantasyTikTokApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208026F2789AE26008461DA /* FantasyTikTokApp.swift */; };
+		A20802722789AE26008461DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802712789AE26008461DA /* ContentView.swift */; };
+		A20802742789AE28008461DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20802732789AE28008461DA /* Assets.xcassets */; };
+		A208027F2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = A208027E2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m */; };
+		A20802A62789AEAA008461DA /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802812789AEAA008461DA /* Tabbar.swift */; };
+		A20802A72789AEAA008461DA /* InBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802832789AEAA008461DA /* InBoxView.swift */; };
+		A20802A82789AEAA008461DA /* PolularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802852789AEAA008461DA /* PolularView.swift */; };
+		A20802A92789AEAA008461DA /* PolularVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802862789AEAA008461DA /* PolularVideo.swift */; };
+		A20802AA2789AEAA008461DA /* PolularPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802872789AEAA008461DA /* PolularPost.swift */; };
+		A20802AB2789AEAA008461DA /* PolularSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802882789AEAA008461DA /* PolularSpace.swift */; };
+		A20802AC2789AEAA008461DA /* PolularPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802892789AEAA008461DA /* PolularPhoto.swift */; };
+		A20802AD2789AEAA008461DA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208028B2789AEAA008461DA /* SearchView.swift */; };
+		A20802AE2789AEAA008461DA /* SearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208028C2789AEAA008461DA /* SearchInputView.swift */; };
+		A20802AF2789AEAA008461DA /* ProFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208028E2789AEAA008461DA /* ProFileView.swift */; };
+		A20802B02789AEAA008461DA /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802902789AEAA008461DA /* SettingView.swift */; };
+		A20802B12789AEAA008461DA /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802922789AEAA008461DA /* PostDetailView.swift */; };
+		A20802B22789AEAA008461DA /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802932789AEAA008461DA /* TimeLineView.swift */; };
+		A20802B32789AEAA008461DA /* PostRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802942789AEAA008461DA /* PostRaw.swift */; };
+		A20802B42789AEAA008461DA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802962789AEAA008461DA /* LoginView.swift */; };
+		A20802B52789AEAA008461DA /* LacunchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802982789AEAA008461DA /* LacunchManager.swift */; };
+		A20802B62789AEAA008461DA /* MT_PageSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208029A2789AEAA008461DA /* MT_PageSegmentView.swift */; };
+		A20802B72789AEAA008461DA /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208029B2789AEAA008461DA /* WebView.swift */; };
+		A20802B82789AEAA008461DA /* MT_PageScrollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208029C2789AEAA008461DA /* MT_PageScrollowView.swift */; };
+		A20802B92789AEAA008461DA /* PF_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208029D2789AEAA008461DA /* PF_TextField.swift */; };
+		A20802BA2789AEAA008461DA /* PublicFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208029E2789AEAA008461DA /* PublicFuncs.swift */; };
+		A20802BB2789AEAA008461DA /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802A02789AEAA008461DA /* Buttons.swift */; };
+		A20802BC2789AEAA008461DA /* Comps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802A22789AEAA008461DA /* Comps.swift */; };
+		A20802BD2789AEAA008461DA /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802A32789AEAA008461DA /* Font.swift */; };
+		A20802BE2789AEAA008461DA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802A42789AEAA008461DA /* Color.swift */; };
+		A20802BF2789AEAA008461DA /* UIstate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802A52789AEAA008461DA /* UIstate.swift */; };
+		A20802C32789AEB5008461DA /* MiSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A20802C12789AEB5008461DA /* MiSans-Semibold.ttf */; };
+		A20802C42789AEB5008461DA /* MiSans-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A20802C22789AEB5008461DA /* MiSans-Normal.ttf */; };
+		A20802C82789AEFD008461DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802C62789AEFD008461DA /* AppDelegate.swift */; };
+		A20802C92789AEFD008461DA /* DefultStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802C72789AEFD008461DA /* DefultStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7512F886AD7F9FC24EEB953B /* Pods_FantasyTikTok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FantasyTikTok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A208026C2789AE26008461DA /* FantasyTikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyTikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A208026F2789AE26008461DA /* FantasyTikTokApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyTikTokApp.swift; sourceTree = "<group>"; };
+		A20802712789AE26008461DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A20802732789AE28008461DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A208027D2789AE96008461DA /* FantasyTikTok-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FantasyTikTok-Bridging-Header.h"; sourceTree = "<group>"; };
+		A208027E2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FantasyTikTok(iOS)-Bridging-Header.m"; sourceTree = "<group>"; };
+		A20802812789AEAA008461DA /* Tabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		A20802832789AEAA008461DA /* InBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InBoxView.swift; sourceTree = "<group>"; };
+		A20802852789AEAA008461DA /* PolularView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularView.swift; sourceTree = "<group>"; };
+		A20802862789AEAA008461DA /* PolularVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularVideo.swift; sourceTree = "<group>"; };
+		A20802872789AEAA008461DA /* PolularPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularPost.swift; sourceTree = "<group>"; };
+		A20802882789AEAA008461DA /* PolularSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularSpace.swift; sourceTree = "<group>"; };
+		A20802892789AEAA008461DA /* PolularPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularPhoto.swift; sourceTree = "<group>"; };
+		A208028B2789AEAA008461DA /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A208028C2789AEAA008461DA /* SearchInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInputView.swift; sourceTree = "<group>"; };
+		A208028E2789AEAA008461DA /* ProFileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProFileView.swift; sourceTree = "<group>"; };
+		A20802902789AEAA008461DA /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		A20802922789AEAA008461DA /* PostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		A20802932789AEAA008461DA /* TimeLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
+		A20802942789AEAA008461DA /* PostRaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRaw.swift; sourceTree = "<group>"; };
+		A20802962789AEAA008461DA /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A20802982789AEAA008461DA /* LacunchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LacunchManager.swift; sourceTree = "<group>"; };
+		A208029A2789AEAA008461DA /* MT_PageSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MT_PageSegmentView.swift; sourceTree = "<group>"; };
+		A208029B2789AEAA008461DA /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A208029C2789AEAA008461DA /* MT_PageScrollowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MT_PageScrollowView.swift; sourceTree = "<group>"; };
+		A208029D2789AEAA008461DA /* PF_TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PF_TextField.swift; sourceTree = "<group>"; };
+		A208029E2789AEAA008461DA /* PublicFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicFuncs.swift; sourceTree = "<group>"; };
+		A20802A02789AEAA008461DA /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		A20802A22789AEAA008461DA /* Comps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comps.swift; sourceTree = "<group>"; };
+		A20802A32789AEAA008461DA /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		A20802A42789AEAA008461DA /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A20802A52789AEAA008461DA /* UIstate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIstate.swift; sourceTree = "<group>"; };
+		A20802C12789AEB5008461DA /* MiSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MiSans-Semibold.ttf"; sourceTree = "<group>"; };
+		A20802C22789AEB5008461DA /* MiSans-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MiSans-Normal.ttf"; sourceTree = "<group>"; };
+		A20802C52789AEC6008461DA /* FantasyTikTok-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FantasyTikTok-Info.plist"; sourceTree = "<group>"; };
+		A20802C62789AEFD008461DA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A20802C72789AEFD008461DA /* DefultStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefultStore.swift; sourceTree = "<group>"; };
+		CB5FD2227A778163A093E742 /* Pods-FantasyTikTok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FantasyTikTok.release.xcconfig"; path = "Target Support Files/Pods-FantasyTikTok/Pods-FantasyTikTok.release.xcconfig"; sourceTree = "<group>"; };
+		CF7A69C04E4347ABCA373DDF /* Pods-FantasyTikTok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FantasyTikTok.debug.xcconfig"; path = "Target Support Files/Pods-FantasyTikTok/Pods-FantasyTikTok.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A20802692789AE26008461DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A1ECD2B2D90631290FECC1 /* Pods_FantasyTikTok.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A20802632789AE26008461DA = {
+			isa = PBXGroup;
+			children = (
+				A20802C52789AEC6008461DA /* FantasyTikTok-Info.plist */,
+				A208026E2789AE26008461DA /* App */,
+				A20802C02789AEB5008461DA /* Font */,
+				A208026D2789AE26008461DA /* Products */,
+				C034231A586942EC395A2945 /* Pods */,
+				E5FA8024F033E036CBD3A261 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A208026D2789AE26008461DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A208026C2789AE26008461DA /* FantasyTikTok.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A208026E2789AE26008461DA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20802C62789AEFD008461DA /* AppDelegate.swift */,
+				A20802C72789AEFD008461DA /* DefultStore.swift */,
+				A208026F2789AE26008461DA /* FantasyTikTokApp.swift */,
+				A20802712789AE26008461DA /* ContentView.swift */,
+				A20802732789AE28008461DA /* Assets.xcassets */,
+				A208027E2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m */,
+				A208027D2789AE96008461DA /* FantasyTikTok-Bridging-Header.h */,
+				A20802802789AEAA008461DA /* PART */,
+				A20802972789AEAA008461DA /* TOOLS */,
+				A208029F2789AEAA008461DA /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A20802802789AEAA008461DA /* PART */ = {
+			isa = PBXGroup;
+			children = (
+				A20802812789AEAA008461DA /* Tabbar.swift */,
+				A20802822789AEAA008461DA /* Message&Notice */,
+				A20802842789AEAA008461DA /* Polular */,
+				A208028A2789AEAA008461DA /* Search */,
+				A208028D2789AEAA008461DA /* Profile */,
+				A208028F2789AEAA008461DA /* Setting */,
+				A20802912789AEAA008461DA /* Timeline */,
+				A20802952789AEAA008461DA /* Login */,
+			);
+			path = PART;
+			sourceTree = "<group>";
+		};
+		A20802822789AEAA008461DA /* Message&Notice */ = {
+			isa = PBXGroup;
+			children = (
+				A20802832789AEAA008461DA /* InBoxView.swift */,
+			);
+			path = "Message&Notice";
+			sourceTree = "<group>";
+		};
+		A20802842789AEAA008461DA /* Polular */ = {
+			isa = PBXGroup;
+			children = (
+				A20802852789AEAA008461DA /* PolularView.swift */,
+				A20802862789AEAA008461DA /* PolularVideo.swift */,
+				A20802872789AEAA008461DA /* PolularPost.swift */,
+				A20802882789AEAA008461DA /* PolularSpace.swift */,
+				A20802892789AEAA008461DA /* PolularPhoto.swift */,
+			);
+			path = Polular;
+			sourceTree = "<group>";
+		};
+		A208028A2789AEAA008461DA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A208028B2789AEAA008461DA /* SearchView.swift */,
+				A208028C2789AEAA008461DA /* SearchInputView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A208028D2789AEAA008461DA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A208028E2789AEAA008461DA /* ProFileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A208028F2789AEAA008461DA /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				A20802902789AEAA008461DA /* SettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		A20802912789AEAA008461DA /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				A20802922789AEAA008461DA /* PostDetailView.swift */,
+				A20802932789AEAA008461DA /* TimeLineView.swift */,
+				A20802942789AEAA008461DA /* PostRaw.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		A20802952789AEAA008461DA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A20802962789AEAA008461DA /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A20802972789AEAA008461DA /* TOOLS */ = {
+			isa = PBXGroup;
+			children = (
+				A20802982789AEAA008461DA /* LacunchManager.swift */,
+				A20802992789AEAA008461DA /* UIKitViews */,
+				A208029E2789AEAA008461DA /* PublicFuncs.swift */,
+			);
+			path = TOOLS;
+			sourceTree = "<group>";
+		};
+		A20802992789AEAA008461DA /* UIKitViews */ = {
+			isa = PBXGroup;
+			children = (
+				A208029A2789AEAA008461DA /* MT_PageSegmentView.swift */,
+				A208029B2789AEAA008461DA /* WebView.swift */,
+				A208029C2789AEAA008461DA /* MT_PageScrollowView.swift */,
+				A208029D2789AEAA008461DA /* PF_TextField.swift */,
+			);
+			path = UIKitViews;
+			sourceTree = "<group>";
+		};
+		A208029F2789AEAA008461DA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A20802A02789AEAA008461DA /* Buttons.swift */,
+				A20802A12789AEAA008461DA /* UIConfig */,
+				A20802A52789AEAA008461DA /* UIstate.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A20802A12789AEAA008461DA /* UIConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A20802A22789AEAA008461DA /* Comps.swift */,
+				A20802A32789AEAA008461DA /* Font.swift */,
+				A20802A42789AEAA008461DA /* Color.swift */,
+			);
+			path = UIConfig;
+			sourceTree = "<group>";
+		};
+		A20802C02789AEB5008461DA /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A20802C12789AEB5008461DA /* MiSans-Semibold.ttf */,
+				A20802C22789AEB5008461DA /* MiSans-Normal.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C034231A586942EC395A2945 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A69C04E4347ABCA373DDF /* Pods-FantasyTikTok.debug.xcconfig */,
+				CB5FD2227A778163A093E742 /* Pods-FantasyTikTok.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E5FA8024F033E036CBD3A261 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7512F886AD7F9FC24EEB953B /* Pods_FantasyTikTok.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A208026B2789AE26008461DA /* FantasyTikTok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A208027A2789AE28008461DA /* Build configuration list for PBXNativeTarget "FantasyTikTok" */;
+			buildPhases = (
+				C485720F235250BCE11E0EC5 /* [CP] Check Pods Manifest.lock */,
+				A20802682789AE26008461DA /* Sources */,
+				A20802692789AE26008461DA /* Frameworks */,
+				A208026A2789AE26008461DA /* Resources */,
+				F74B0E4ABC854A939CCFFEDC /* [CP] Embed Pods Frameworks */,
+				D42BFBEF8F4889A3D59457CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FantasyTikTok;
+			productName = FantasyTikTok;
+			productReference = A208026C2789AE26008461DA /* FantasyTikTok.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A20802642789AE26008461DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A208026B2789AE26008461DA = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+				};
+			};
+			buildConfigurationList = A20802672789AE26008461DA /* Build configuration list for PBXProject "FantasyTikTok" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A20802632789AE26008461DA;
+			productRefGroup = A208026D2789AE26008461DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A208026B2789AE26008461DA /* FantasyTikTok */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A208026A2789AE26008461DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20802C42789AEB5008461DA /* MiSans-Normal.ttf in Resources */,
+				A20802C32789AEB5008461DA /* MiSans-Semibold.ttf in Resources */,
+				A20802742789AE28008461DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C485720F235250BCE11E0EC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FantasyTikTok-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D42BFBEF8F4889A3D59457CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FantasyTikTok/Pods-FantasyTikTok-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FantasyTikTok/Pods-FantasyTikTok-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FantasyTikTok/Pods-FantasyTikTok-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F74B0E4ABC854A939CCFFEDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FantasyTikTok/Pods-FantasyTikTok-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FantasyTikTok/Pods-FantasyTikTok-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FantasyTikTok/Pods-FantasyTikTok-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A20802682789AE26008461DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20802A82789AEAA008461DA /* PolularView.swift in Sources */,
+				A20802B32789AEAA008461DA /* PostRaw.swift in Sources */,
+				A20802BC2789AEAA008461DA /* Comps.swift in Sources */,
+				A20802B52789AEAA008461DA /* LacunchManager.swift in Sources */,
+				A20802AA2789AEAA008461DA /* PolularPost.swift in Sources */,
+				A20802AB2789AEAA008461DA /* PolularSpace.swift in Sources */,
+				A20802BF2789AEAA008461DA /* UIstate.swift in Sources */,
+				A20802B82789AEAA008461DA /* MT_PageScrollowView.swift in Sources */,
+				A20802B02789AEAA008461DA /* SettingView.swift in Sources */,
+				A20802B72789AEAA008461DA /* WebView.swift in Sources */,
+				A20802BE2789AEAA008461DA /* Color.swift in Sources */,
+				A20802C92789AEFD008461DA /* DefultStore.swift in Sources */,
+				A20802722789AE26008461DA /* ContentView.swift in Sources */,
+				A20802A72789AEAA008461DA /* InBoxView.swift in Sources */,
+				A20802B12789AEAA008461DA /* PostDetailView.swift in Sources */,
+				A20802AE2789AEAA008461DA /* SearchInputView.swift in Sources */,
+				A208027F2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m in Sources */,
+				A20802702789AE26008461DA /* FantasyTikTokApp.swift in Sources */,
+				A20802A92789AEAA008461DA /* PolularVideo.swift in Sources */,
+				A20802C82789AEFD008461DA /* AppDelegate.swift in Sources */,
+				A20802B42789AEAA008461DA /* LoginView.swift in Sources */,
+				A20802B62789AEAA008461DA /* MT_PageSegmentView.swift in Sources */,
+				A20802AC2789AEAA008461DA /* PolularPhoto.swift in Sources */,
+				A20802BA2789AEAA008461DA /* PublicFuncs.swift in Sources */,
+				A20802AF2789AEAA008461DA /* ProFileView.swift in Sources */,
+				A20802BB2789AEAA008461DA /* Buttons.swift in Sources */,
+				A20802A62789AEAA008461DA /* Tabbar.swift in Sources */,
+				A20802BD2789AEAA008461DA /* Font.swift in Sources */,
+				A20802AD2789AEAA008461DA /* SearchView.swift in Sources */,
+				A20802B22789AEAA008461DA /* TimeLineView.swift in Sources */,
+				A20802B92789AEAA008461DA /* PF_TextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A20802782789AE28008461DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A20802792789AE28008461DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A208027B2789AE28008461DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF7A69C04E4347ABCA373DDF /* Pods-FantasyTikTok.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FantasyTikTok/Preview Content\"";
+				DEVELOPMENT_TEAM = 6UB6WM6VQR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FantasyTikTok-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FantasyTikTok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FantasyTikTok/FantasyTikTok-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A208027C2789AE28008461DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB5FD2227A778163A093E742 /* Pods-FantasyTikTok.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FantasyTikTok/Preview Content\"";
+				DEVELOPMENT_TEAM = 6UB6WM6VQR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FantasyTikTok-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FantasyTikTok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FantasyTikTok/FantasyTikTok-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A20802672789AE26008461DA /* Build configuration list for PBXProject "FantasyTikTok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20802782789AE28008461DA /* Debug */,
+				A20802792789AE28008461DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A208027A2789AE28008461DA /* Build configuration list for PBXNativeTarget "FantasyTikTok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A208027B2789AE28008461DA /* Debug */,
+				A208027C2789AE28008461DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A20802642789AE26008461DA /* Project object */;
+}
