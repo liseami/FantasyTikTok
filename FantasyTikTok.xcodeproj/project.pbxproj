@@ -24,8 +24,8 @@
 		A20802AF2789AEAA008461DA /* ProFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208028E2789AEAA008461DA /* ProFileView.swift */; };
 		A20802B02789AEAA008461DA /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802902789AEAA008461DA /* SettingView.swift */; };
 		A20802B12789AEAA008461DA /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802922789AEAA008461DA /* PostDetailView.swift */; };
-		A20802B22789AEAA008461DA /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802932789AEAA008461DA /* TimeLineView.swift */; };
-		A20802B32789AEAA008461DA /* PostRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802942789AEAA008461DA /* PostRaw.swift */; };
+		A20802B22789AEAA008461DA /* HomeTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802932789AEAA008461DA /* HomeTaskView.swift */; };
+		A20802B32789AEAA008461DA /* TaskRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802942789AEAA008461DA /* TaskRaw.swift */; };
 		A20802B42789AEAA008461DA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802962789AEAA008461DA /* LoginView.swift */; };
 		A20802B52789AEAA008461DA /* LacunchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802982789AEAA008461DA /* LacunchManager.swift */; };
 		A20802B62789AEAA008461DA /* MT_PageSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208029A2789AEAA008461DA /* MT_PageSegmentView.swift */; };
@@ -64,8 +64,8 @@
 		A208028E2789AEAA008461DA /* ProFileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProFileView.swift; sourceTree = "<group>"; };
 		A20802902789AEAA008461DA /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		A20802922789AEAA008461DA /* PostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
-		A20802932789AEAA008461DA /* TimeLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
-		A20802942789AEAA008461DA /* PostRaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRaw.swift; sourceTree = "<group>"; };
+		A20802932789AEAA008461DA /* HomeTaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTaskView.swift; sourceTree = "<group>"; };
+		A20802942789AEAA008461DA /* TaskRaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRaw.swift; sourceTree = "<group>"; };
 		A20802962789AEAA008461DA /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A20802982789AEAA008461DA /* LacunchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LacunchManager.swift; sourceTree = "<group>"; };
 		A208029A2789AEAA008461DA /* MT_PageSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MT_PageSegmentView.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				A20802C52789AEC6008461DA /* FantasyTikTok-Info.plist */,
-				A208026E2789AE26008461DA /* App */,
+				A208026E2789AE26008461DA /* FantasyTikTok */,
 				A20802C02789AEB5008461DA /* Font */,
 				A208026D2789AE26008461DA /* Products */,
 				C034231A586942EC395A2945 /* Pods */,
@@ -119,7 +119,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A208026E2789AE26008461DA /* App */ = {
+		A208026E2789AE26008461DA /* FantasyTikTok */ = {
 			isa = PBXGroup;
 			children = (
 				A20802C62789AEFD008461DA /* AppDelegate.swift */,
@@ -133,7 +133,7 @@
 				A20802972789AEAA008461DA /* TOOLS */,
 				A208029F2789AEAA008461DA /* UI */,
 			);
-			path = App;
+			path = FantasyTikTok;
 			sourceTree = "<group>";
 		};
 		A20802802789AEAA008461DA /* PART */ = {
@@ -145,7 +145,7 @@
 				A208028A2789AEAA008461DA /* Search */,
 				A208028D2789AEAA008461DA /* Profile */,
 				A208028F2789AEAA008461DA /* Setting */,
-				A20802912789AEAA008461DA /* Timeline */,
+				A20802912789AEAA008461DA /* Home */,
 				A20802952789AEAA008461DA /* Login */,
 			);
 			path = PART;
@@ -196,14 +196,14 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
-		A20802912789AEAA008461DA /* Timeline */ = {
+		A20802912789AEAA008461DA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A20802932789AEAA008461DA /* HomeTaskView.swift */,
 				A20802922789AEAA008461DA /* PostDetailView.swift */,
-				A20802932789AEAA008461DA /* TimeLineView.swift */,
-				A20802942789AEAA008461DA /* PostRaw.swift */,
+				A20802942789AEAA008461DA /* TaskRaw.swift */,
 			);
-			path = Timeline;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		A20802952789AEAA008461DA /* Login */ = {
@@ -217,8 +217,8 @@
 		A20802972789AEAA008461DA /* TOOLS */ = {
 			isa = PBXGroup;
 			children = (
-				A20802982789AEAA008461DA /* LacunchManager.swift */,
 				A20802992789AEAA008461DA /* UIKitViews */,
+				A20802982789AEAA008461DA /* LacunchManager.swift */,
 				A208029E2789AEAA008461DA /* PublicFuncs.swift */,
 			);
 			path = TOOLS;
@@ -238,8 +238,8 @@
 		A208029F2789AEAA008461DA /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				A20802A02789AEAA008461DA /* Buttons.swift */,
 				A20802A12789AEAA008461DA /* UIConfig */,
+				A20802A02789AEAA008461DA /* Buttons.swift */,
 				A20802A52789AEAA008461DA /* UIstate.swift */,
 			);
 			path = UI;
@@ -270,7 +270,6 @@
 				CF7A69C04E4347ABCA373DDF /* Pods-FantasyTikTok.debug.xcconfig */,
 				CB5FD2227A778163A093E742 /* Pods-FantasyTikTok.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -417,7 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20802A82789AEAA008461DA /* PolularView.swift in Sources */,
-				A20802B32789AEAA008461DA /* PostRaw.swift in Sources */,
+				A20802B32789AEAA008461DA /* TaskRaw.swift in Sources */,
 				A20802BC2789AEAA008461DA /* Comps.swift in Sources */,
 				A20802B52789AEAA008461DA /* LacunchManager.swift in Sources */,
 				A20802AA2789AEAA008461DA /* PolularPost.swift in Sources */,
@@ -445,7 +444,7 @@
 				A20802A62789AEAA008461DA /* Tabbar.swift in Sources */,
 				A20802BD2789AEAA008461DA /* Font.swift in Sources */,
 				A20802AD2789AEAA008461DA /* SearchView.swift in Sources */,
-				A20802B22789AEAA008461DA /* TimeLineView.swift in Sources */,
+				A20802B22789AEAA008461DA /* HomeTaskView.swift in Sources */,
 				A20802B92789AEAA008461DA /* PF_TextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,11 +577,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FantasyTikTok/Preview Content\"";
 				DEVELOPMENT_TEAM = 6UB6WM6VQR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FantasyTikTok-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "抖赞DAO";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -612,11 +611,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FantasyTikTok/Preview Content\"";
 				DEVELOPMENT_TEAM = 6UB6WM6VQR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FantasyTikTok-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "抖赞DAO";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

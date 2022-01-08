@@ -7,7 +7,7 @@
 
 "core_share_error_7" = "[SCE10007]出现报错2014，请使用 HTTPS 图片 URL。 https://developer.umeng.com/docs/66632/detail/67029?um_channel=sdk";
 "core_info_1" = "[SCI10005]初始化平台参数中redirectURL参数的作用。 https://developer.umeng.com/docs/66632/detail/67027?um_channel=sdk";
-"core_info_2" = "[SCI10006]分享/授权登录后如果无法返回应用（微信、QQ、微博等平台）。 https://developer.umeng.com/docs/66632/detail/67028?um_channel=sdk";
+"core_info_2" = "[SCI10006]分享/授权登录后如果无法返回应用（微信、QQ、抖音等平台）。 https://developer.umeng.com/docs/66632/detail/67028?um_channel=sdk";
 //core handle 协议相关
 "core_auth_error_1" = "[SCE10001]未发现第三方或自定义平台相应类:%@\n请检查:\n1、平台类已实现<UMSocialPlatformProvider>协议\n2、此平台枚举值在正常枚举区间内，参考UMSocialPlatformConfig.h —> UMSocialPlatformType枚举。 https://developer.umeng.com/docs/66632/detail/67023?um_channel=sdk";
 "core_auth_error_4" = "[SCE10001]未发现第三方或自定义平台相应类:%@\n请检查:\n1、平台类已实现<UMSocialPlatformProvider>协议\n2、此平台枚举值在正常枚举区间内，参考UMSocialPlatformConfig.h —> UMSocialPlatformType枚举。 https://developer.umeng.com/docs/66632/detail/67023?um_channel=sdk";
@@ -78,14 +78,14 @@
 "sina_getuserinfo_error_1" = "[SCE10002]请检查是否设置了sina的URLSchema。 https://developer.umeng.com/docs/66632/detail/67024?um_channel=sdk";
 
 "sina_share_error_1" = "[SCE10002]请检查是否设置了sina的URLSchema。 https://developer.umeng.com/docs/66632/detail/67024?um_channel=sdk";
-"sina_share_error_2" = "[SSE10001]新浪分享不支持的分享类型，新浪的分享类型为：文本，图片，图文，网络链接，音乐链接，视频链接。 https://developer.umeng.com/docs/66632/detail/67329?um_channel=sdk";
-"sina_shareWebPage_error_1"="[SSE10002]新浪分享webpage类型(需要强制加入缩略图)错误，具体原因如下：%@。 https://developer.umeng.com/docs/66632/detail/67054?um_channel=sdk";
-"sina_shareText_Info_1" = "[SSI10003]新浪文本分享最大的字是140个，如果超过就不能分享成功，sdk默认开启截断功能，如果需要停止截断需要在调用分享前加入代码[UMSocialGlobal shareInstance].isTruncateShareText=NO。 https://developer.umeng.com/docs/66632/detail/67055?um_channel=sdk";
+"sina_share_error_2" = "[SSE10001]分享不支持的分享类型，的分享类型为：文本，图片，图文，网络链接，音乐链接，视频链接。 https://developer.umeng.com/docs/66632/detail/67329?um_channel=sdk";
+"sina_shareWebPage_error_1"="[SSE10002]分享webpage类型(需要强制加入缩略图)错误，具体原因如下：%@。 https://developer.umeng.com/docs/66632/detail/67054?um_channel=sdk";
+"sina_shareText_Info_1" = "[SSI10003]文本分享最大的字是140个，如果超过就不能分享成功，sdk默认开启截断功能，如果需要停止截断需要在调用分享前加入代码[UMSocialGlobal shareInstance].isTruncateShareText=NO。 https://developer.umeng.com/docs/66632/detail/67055?um_channel=sdk";
 //info
-"sina_info_1" = "[SSI10004]微博分享 网页(WebPage)类型，链接在微博只显示为'网页链接'的文字。 https://developer.umeng.com/docs/66632/detail/67056?um_channel=sdk";
-"sina_info_2" = "[SSI10005]微博登录报错'sso package or sign error'。 https://developer.umeng.com/docs/66632/detail/67058?um_channel=sdk";
-"sina_info_3" = "[SSI10006]微博授权实现关注官方微博功能。 https://developer.umeng.com/docs/66632/detail/67059?um_channel=sdk";
-"sina_info_4" = "[SSI10007]微博报错 redirect url mismatch。 https://developer.umeng.com/docs/66632/detail/67060?um_channel=sdk";
+"sina_info_1" = "[SSI10004]抖音分享 网页(WebPage)类型，链接在抖音只显示为'网页链接'的文字。 https://developer.umeng.com/docs/66632/detail/67056?um_channel=sdk";
+"sina_info_2" = "[SSI10005]抖音登录报错'sso package or sign error'。 https://developer.umeng.com/docs/66632/detail/67058?um_channel=sdk";
+"sina_info_3" = "[SSI10006]抖音授权实现关注官方抖音功能。 https://developer.umeng.com/docs/66632/detail/67059?um_channel=sdk";
+"sina_info_4" = "[SSI10007]抖音报错 redirect url mismatch。 https://developer.umeng.com/docs/66632/detail/67060?um_channel=sdk";
 
 // 钉钉支付宝
 // info
