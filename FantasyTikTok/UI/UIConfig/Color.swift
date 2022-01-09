@@ -31,7 +31,7 @@ extension Color  {
     static let Success = Color("Success")
     static let Warning = Color("Warning")
     
-    static let DeepBlue = Color("DeepBlue")
+    static let Info = Color("Info")
     static let Purple = Color("Purple")
     
 }

@@ -48,120 +48,232 @@ struct ProFileView: View {
         
          
         PF_OffsetScrollView(offset: $offset, content: {
+            VStack(alignment: .center, spacing: 24) {
+                cashCard
+                    .padding(.horizontal,24)
+                
+                
+                VStack(spacing:24){
+                    
+                    profiletask
+                   
+                    
+                    
+                    balance
+                
+                    Rectangle()
+                        .frame( height: 1)
+                        .foregroundColor(.back1)
+                        .padding(.horizontal,24)
+                    
+                    
+                    mydouzan
+                   
+                    Rectangle()
+                        .frame( height: 1)
+                        .foregroundColor(.back1)
+                        .padding(.horizontal,24)
+                    
+                    
+                    toolbox
+                    
+                    
+                    
+                }
+                .padding(.vertical,24)
+                .background(Color.Card)
+        
+                
+               
+               
+            }
+            .padding(.top,24)
+       
+          
+        })
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(Text("Username"))
+        .PF_Navitop(style: self.offset < -6 ? .large : .none, backgroundView: {
+            BlurView()
+        }, TopCenterView: {
+        })
+      
+    
+    }
+    
+    var toolbox : some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("自媒体工具箱")
+                .PF_Leading()
+                .mFont(style: .Title_17_B,color: .fc1)
+            let w = SW / 5
+            let columns =
+            Array(repeating:GridItem(.fixed(w), spacing: 12), count: 4)
             
+                     LazyVGrid(columns: columns, spacing: 12) {
+                         ForEach(0 ..< 8) { item in
+                             VStack{
+                                 ICON(name:"arrow-up-circle-line",fcolor:.MainColor,size:32)
+                                     .padding(.all,12)
+                                     .background(Color.back1)
+                                     .clipShape(Circle())
+                                    Text("工具")
+                                     .mFont(style: .Body_13_R,color: .fc1)
+                             }
+                            
+                         }
+                     }
+        }
+        .padding(.horizontal,24)
+    }
+    
+    
+    var mydouzan : some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("我的抖赞")
+                .PF_Leading()
+                .mFont(style: .Title_17_B,color: .fc1)
+            let w = SW / 5
+            let columns =
+            Array(repeating:GridItem(.fixed(w), spacing: 12), count: 4)
+            
+                     LazyVGrid(columns: columns, spacing: 12) {
+                         ForEach(0 ..< 8) { item in
+                             VStack{
+                                 ICON(name:"arrow-up-circle-line",fcolor:.MainColor,size:32)
+                                     .padding(.all,12)
+                                     .background(Color.back1)
+                                     .clipShape(Circle())
+                                    Text("我报名的")
+                                     .mFont(style: .Body_13_R,color: .fc1)
+                             }
+                            
+                         }
+                     }
+        }
+        .padding(.horizontal,24)
+    }
+    var profiletask : some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing:12){
+                Spacer().frame(width: 12)
+                HStack{
+                    ICON(name:"checkbox-multiple-line",fcolor:.Card,size:24)
+                    VStack(alignment: .leading, spacing: 4){
+                        Text("补填邀请码")
+                            .mFont(style: .Title_17_B,color: .Card)
+                        Text("轻松领取2000赞铜板")
+                            .mFont(style: .Body_15_R,color: .Card)
+                    }
+                Spacer()
+                }
+                .padding(.all,12)
+                .background(Color.Info)
+                .frame(width: SW * 0.7)
+                .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
+                
+                HStack{
+                    ICON(name:"checkbox-multiple-line",fcolor:.Card,size:24)
+                    VStack(alignment: .leading, spacing: 4){
+                        Text("邀请朋友")
+                            .mFont(style: .Title_17_B,color: .Card)
+                        Text("轻松领取2000赞铜板")
+                            .mFont(style: .Body_15_R,color: .Card)
+                    }
+                Spacer()
+                }
+                .padding(.all,12)
+                .background(Color.Info)
+                .frame(width: SW * 0.7)
+                .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
+                Spacer().frame(width: 12)
+                
+            }
+        }
+    }
+    
+    var balance : some View {
+        HStack{
+            HStack{
+                ICON(name:"logo",fcolor:.MainColor,size:16)
+                
+                Text("赞金币")
+                    .mFont(style: .Body_15_R,color: .fc1)
+            Spacer()
+                Text(Double.random(in: 0...1000).toCurrencyString)
+                    .mFont(style: .Body_15_B,color: .fc1)
+            }
+            .padding(.horizontal,12)
+            .padding(.vertical,12)
+            .background(Color.Card)
+            .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
+            .shadow(color: .fc1.opacity(0.06), radius: 4, x: 0, y: 2)
+            HStack{
+                ICON(name:"logo",fcolor:.MainColor,size:16)
+                
+                Text("赞铜板")
+                    .mFont(style: .Body_15_R,color: .fc1)
+            Spacer()
+                Text(Double.random(in: 0...1000).toCurrencyString)
+                    .mFont(style: .Body_15_B,color: .fc1)
+            }
+            .padding(.horizontal,12)
+            .padding(.vertical,12)
+            .background(Color.Card)
+            .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
+            .shadow(color: .fc1.opacity(0.06), radius: 4, x: 0, y: 2)
+        }
+        .padding(.horizontal,24)
+    }
+    
+    var cashCard : some View{
+        VStack(spacing:0){
             VStack(spacing:0){
-                
-                
                 HStack{
                     Text("抖赞钱包")
                         .PF_Leading()
-                        .mFont(style: .Title_17_B,color: .MainColor)
+                        .mFont(style: .Title_19_B,color: .MainColor)
                     Spacer()
-                    ICON(name: "more-line",fcolor: .fc3,size: 16)
+                    ICON(name: "more-line",fcolor: .fc1,size: 16)
                 }
-          
                     .padding(.vertical,12)
                 
                 HStack(alignment: .top, spacing: 4){
                     Text("可提现")
-                        .mFont(style: .Body_12_R,color: .fc2)
+                        .mFont(style: .Body_15_R,color: .fc2)
                     Text(Double.random(in: 0...120).toCurrencyString)
                         .mFont(style: .LargeTitle_22_B,color: .fc1)
                     Spacer()
                 }
                 .padding(.vertical,12)
                 .padding(.bottom,24)
-                
-                
-                
-                Rectangle()
-                    .frame( height: 1)
-                    .padding(.horizontal,-12)
-                    .foregroundColor(.fc3.opacity(0.1))
-                   
-                HStack{
-                    Text("去做赏金任务")
-                        .mFont(style: .Body_13_B,color: .MainColor)
-                    Spacer()
-                    ICON(name: "arrow-right-line",fcolor: .fc3,size: 16)
-                }
-                .padding(.vertical,12)
-           
             }
-            .padding(.horizontal,12)
-                .background(Color.Card)
-                .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
-                .shadow(color: .fc1.opacity(0.1), radius: 12, x: 0, y: 0)
-                .padding(.all,16)
-        })
-
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle(Text("Username"))
-    
-    }
-    
-    var tabbar : some View{
-        VStack(spacing:12){
-            HStack(spacing:24){
-                ForEach(vm.tabitems,id:\.self){item in
-                    let selected = item == vm.messageTab
-            
-                    VStack(alignment: .center, spacing: 8){
-                        Text(item.showText)
-                        .mFont(style: .Title_17_B,color: selected ? .fc1 : .fc2)
-                        RoundedRectangle(cornerRadius: 2, style: .continuous)
-                            .frame(maxWidth:44, maxHeight: 3)
-                            .foregroundColor(.MainColor)
-                            .ifshow(selected)
-                            .matchedGeometryEffect(id: "tabanimation", in: tabanimation)
-                        RoundedRectangle(cornerRadius: 2, style: .continuous)
-                            .frame(maxWidth:44, maxHeight: 3)
-                            .foregroundColor(.clear)
-                            .ifshow(!selected)
-                            
-                    }
-                    .onTapGesture {
-                        withAnimation {
-                            vm.messageTab = item
-                        }
-                    }
-                }
-                Spacer()
-            }
-            .padding(.horizontal,24)
-            .padding(.top,24)
-            .background(RoundedRectangle(cornerRadius: 2, style: .continuous)
-                            .frame(maxHeight: 0.5)
-                            .foregroundColor(.fc3.opacity(0.6)),alignment: .bottom)
-                
-        }
-    }
-    var message : some View {
-        HStack(alignment: .center, spacing: 0) {
-            HStack(alignment: .top,  spacing:12){
-                Image("liseamiAvatar")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: SW * 0.12, height: SW * 0.12)
-                    .clipShape(Circle())
+            .background(Color.Card.overlay(Image("logo").resizable()
+                                            .scaledToFill()
+                                            .offset(x:120,y:24)))
+            Rectangle()
+                .frame( height: 1)
+                .padding(.horizontal,-12)
+                .foregroundColor(.fc3.opacity(0.1))
                
-                VStack(alignment: .leading, spacing: 6){
-                    Text(randomString(3))
-                        .mFont(style: .Title_17_B,color: .fc1)
-                    
-                    Text(randomString(Int.random(in: 0...120)))
-                        .mFont(style: .Title_17_R,color: .fc2)
-                }
-           
-                
+            HStack{
+                Text("去做赏金任务")
+                    .mFont(style: .Title_17_B,color: .Info)
                 Spacer()
+                ICON(name: "arrow-right-line",fcolor: .fc3,size: 16)
             }
-            Text("12:21")
-                .mFont(style: .Body_13_R,color: .fc3)
+            .padding(.vertical,12)
         }
-           
+        .padding(.horizontal,12)
+            .background(Color.Card)
+            .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
+            .shadow(color: .fc1.opacity(0.1), radius: 12, x: 0, y: 0)
         
+            
     }
+    
+    
+
 }
 
 struct InBoxView_Previews: PreviewProvider {
