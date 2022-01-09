@@ -13,7 +13,7 @@
 		A20802742789AE28008461DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20802732789AE28008461DA /* Assets.xcassets */; };
 		A208027F2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = A208027E2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m */; };
 		A20802A62789AEAA008461DA /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802812789AEAA008461DA /* Tabbar.swift */; };
-		A20802A72789AEAA008461DA /* InBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802832789AEAA008461DA /* InBoxView.swift */; };
+		A20802A72789AEAA008461DA /* ProFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802832789AEAA008461DA /* ProFileView.swift */; };
 		A20802A82789AEAA008461DA /* PolularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802852789AEAA008461DA /* PolularView.swift */; };
 		A20802A92789AEAA008461DA /* PolularVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802862789AEAA008461DA /* PolularVideo.swift */; };
 		A20802AA2789AEAA008461DA /* PolularPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802872789AEAA008461DA /* PolularPost.swift */; };
@@ -21,7 +21,6 @@
 		A20802AC2789AEAA008461DA /* PolularPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802892789AEAA008461DA /* PolularPhoto.swift */; };
 		A20802AD2789AEAA008461DA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208028B2789AEAA008461DA /* SearchView.swift */; };
 		A20802AE2789AEAA008461DA /* SearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208028C2789AEAA008461DA /* SearchInputView.swift */; };
-		A20802AF2789AEAA008461DA /* ProFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208028E2789AEAA008461DA /* ProFileView.swift */; };
 		A20802B02789AEAA008461DA /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802902789AEAA008461DA /* SettingView.swift */; };
 		A20802B12789AEAA008461DA /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802922789AEAA008461DA /* PostDetailView.swift */; };
 		A20802B22789AEAA008461DA /* HomeTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802932789AEAA008461DA /* HomeTaskView.swift */; };
@@ -53,7 +52,7 @@
 		A208027D2789AE96008461DA /* FantasyTikTok-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FantasyTikTok-Bridging-Header.h"; sourceTree = "<group>"; };
 		A208027E2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FantasyTikTok(iOS)-Bridging-Header.m"; sourceTree = "<group>"; };
 		A20802812789AEAA008461DA /* Tabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
-		A20802832789AEAA008461DA /* InBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InBoxView.swift; sourceTree = "<group>"; };
+		A20802832789AEAA008461DA /* ProFileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProFileView.swift; sourceTree = "<group>"; };
 		A20802852789AEAA008461DA /* PolularView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularView.swift; sourceTree = "<group>"; };
 		A20802862789AEAA008461DA /* PolularVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularVideo.swift; sourceTree = "<group>"; };
 		A20802872789AEAA008461DA /* PolularPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularPost.swift; sourceTree = "<group>"; };
@@ -61,7 +60,6 @@
 		A20802892789AEAA008461DA /* PolularPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularPhoto.swift; sourceTree = "<group>"; };
 		A208028B2789AEAA008461DA /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A208028C2789AEAA008461DA /* SearchInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInputView.swift; sourceTree = "<group>"; };
-		A208028E2789AEAA008461DA /* ProFileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProFileView.swift; sourceTree = "<group>"; };
 		A20802902789AEAA008461DA /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		A20802922789AEAA008461DA /* PostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		A20802932789AEAA008461DA /* HomeTaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTaskView.swift; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 		A20802822789AEAA008461DA /* Message&Notice */ = {
 			isa = PBXGroup;
 			children = (
-				A20802832789AEAA008461DA /* InBoxView.swift */,
 			);
 			path = "Message&Notice";
 			sourceTree = "<group>";
@@ -183,7 +180,7 @@
 		A208028D2789AEAA008461DA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				A208028E2789AEAA008461DA /* ProFileView.swift */,
+				A20802832789AEAA008461DA /* ProFileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -428,7 +425,7 @@
 				A20802BE2789AEAA008461DA /* Color.swift in Sources */,
 				A20802C92789AEFD008461DA /* DefultStore.swift in Sources */,
 				A20802722789AE26008461DA /* ContentView.swift in Sources */,
-				A20802A72789AEAA008461DA /* InBoxView.swift in Sources */,
+				A20802A72789AEAA008461DA /* ProFileView.swift in Sources */,
 				A20802B12789AEAA008461DA /* PostDetailView.swift in Sources */,
 				A20802AE2789AEAA008461DA /* SearchInputView.swift in Sources */,
 				A208027F2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m in Sources */,
@@ -439,7 +436,6 @@
 				A20802B62789AEAA008461DA /* MT_PageSegmentView.swift in Sources */,
 				A20802AC2789AEAA008461DA /* PolularPhoto.swift in Sources */,
 				A20802BA2789AEAA008461DA /* PublicFuncs.swift in Sources */,
-				A20802AF2789AEAA008461DA /* ProFileView.swift in Sources */,
 				A20802BB2789AEAA008461DA /* Buttons.swift in Sources */,
 				A20802A62789AEAA008461DA /* Tabbar.swift in Sources */,
 				A20802BD2789AEAA008461DA /* Font.swift in Sources */,
@@ -587,6 +583,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,6 +618,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

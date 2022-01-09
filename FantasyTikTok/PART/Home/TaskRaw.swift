@@ -19,60 +19,68 @@ struct TaskRaw: View {
         
         HStack(alignment: .top,  spacing:12){
             
-            let avatarW = SW * 0.14
-            let imageW = SW - 24 - 32 - avatarW - 12
-           
-            Image("liseamiAvatar")
+            let avatarW = SW * 0.1
+
+            
+            Image(String(Int.random(in: 1...12)))
                 .resizable()
                 .scaledToFill()
                 .frame(width: avatarW, height: avatarW)
                 .clipShape(Circle())
-            VStack(alignment: .leading,spacing:12){
+        
                 
-                
-                HStack(alignment: .center, spacing:6){
-                    Text(task)
-                        .mFont(style: .Title_17_B,color: .fc1)
+            VStack(alignment: .leading,  spacing:16){
+                HStack(alignment: .top, spacing:6){
+                    VStack(alignment: .leading, spacing: 0){
+                        Text(task)
+                            .mFont(style: .Title_17_B,color: .fc1)
+                        Text("@lismemia")
+                            .mFont(style: .Body_15_R,color: .fc2)
+                    }
+                   
                     Spacer()
-                
+                    HStack(alignment: .center){
+                        Text("赏金")
+                            .mFont(style: .Body_15_R,color: .fc2)
+                        Text(taskbounty.toCurrencyString)
+                            .mFont(style: .Title_17_B,color: .MainColor)
+                    }
+                   
                 }
                 
+                VStack(alignment: .leading, spacing:4){
+                    ProgressView(value: Double.random(in: 0...1))
+                        .accentColor(.MainColor)
+                    Text("已发放 \(Double.random(in: 0...1).toCurrencyString)剩余 \(Double.random(in: 0...1).toCurrencyString)")
+                        .mFont(style: .Body_15_R,color: .fc2)
+                }
+        
                 HStack{
-                    Text("赏金")
-                        .mFont(style: .Body_15_R,color: .fc1)
-                    Text(taskbounty.toCurrencyString)
-                        .mFont(style: .Body_15_B,color: .Success)
+                 
+                    HStack{
+                        ICON(name:"tiktok",fcolor:.white,size:16)
+                        Text("去关注")
+                            .mFont(style: .Body_15_B,color: .white)
+                    }
+                        .padding(.horizontal,12)
+                        .padding(.vertical,6)
+                        .background(Color.MainColor)
+                        .clipShape(RoundedRectangle(cornerRadius: 4, style: .continuous))
+                        
+                    Spacer()
                 }
-              
-                
-                Text("欢迎大家关注我哟～😊")
-                    .mFont(style: .Body_15_R,color: .fc1)
-                
-                
-                
-                ProgressView(value: 0.5)
-                
-                
-            
-                
                
+                
+                 
+            }
             
+               
+
 //              Color.red.frame(width: imageW, height: imageW)
                 
                 
-                    
-               
                 
-                
-            }
-            
-            Text("去关注")
-                .mFont(style: .Body_15_B,color: .white)
-                .padding(.horizontal,12)
-                .padding(.vertical,6)
-                .background(Color.MainColor)
-                .clipShape(Capsule(style: .continuous))
-                .padding(.trailing,12)
+         
            
         }
         .padding(.all,16)
@@ -80,8 +88,7 @@ struct TaskRaw: View {
         .onTapGesture {
             UIState.shared.showPostDetailView = true
         }
-      
-        .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
     }
 }
 

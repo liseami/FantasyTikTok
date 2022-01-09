@@ -51,7 +51,7 @@ struct ContentView: View {
             case .home :  HomeTaskView()
             case .light   :  PolularView()
             case .search   :  searchView
-            case .profile  :  InBoxView()
+            case .profile  :  ProFileView()
             }
         }
         ///Navilink
@@ -88,7 +88,7 @@ struct ContentView: View {
                     Circle()
                         .foregroundColor( poluar ? .Purple : .MainColor)
                         .frame(width: SW * 0.13, height: SW * 0.13)
-                        .overlay(ICON(name: poluar ? "shopping-cart-add" : "edit",fcolor: .Card,size: 24))
+                        .overlay(ICON(name: poluar ? "list-settings-line" : "add-line",fcolor: .Card,size: 24))
                         .shadow(color: .fc1.opacity(0.12), radius: 4, x: 0, y: 4)
                 }
             }
@@ -138,7 +138,7 @@ struct ContentView: View {
         Button {
             uistate.showSettingView.toggle()
         } label: {
-            ICON(name:"settings",fcolor: .fc1){
+            ICON(name:"settings-4-line",fcolor: .fc1){
                 uistate.showSettingView.toggle()
             }
         }

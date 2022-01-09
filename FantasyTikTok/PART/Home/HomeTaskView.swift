@@ -61,7 +61,16 @@ struct HomeTaskView: View {
         }
         .frame(width: SW)
         .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle(Text("任务大厅"))
+        .PF_Navitop(style: .large,showDivider: false) {
+            Color.BackGround
+        } TopCenterView: {
+            Image("logo")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 28, height: 28)
+        }
+
+
         
         
     }
