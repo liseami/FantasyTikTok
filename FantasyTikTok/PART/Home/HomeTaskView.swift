@@ -79,12 +79,9 @@ struct HomeTaskView: View {
     var mainViews : some View {
         HStack(spacing: 0) {
             Group {
-                
                 ScrollView {
                     LazyVStack {
                         Spacer().frame(width: 1, height: 1)
-
-                            
                         ForEach(0..<12){ index in
                             TaskRaw(taskbounty: Double.random(in: 0...100), task: "关注任务", postcontent: str)
                         }

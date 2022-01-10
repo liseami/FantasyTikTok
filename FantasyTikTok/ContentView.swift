@@ -49,7 +49,7 @@ struct ContentView: View {
             switch uistate.TabbarIndex{
             ///主页面
             case .home :  HomeTaskView()
-            case .light   :  PolularView()
+            case .light   :  GetMoneyView()
             case .search   :  searchView
             case .profile  :  ProFileView()
             }

@@ -14,7 +14,7 @@
 		A208027F2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = A208027E2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m */; };
 		A20802A62789AEAA008461DA /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802812789AEAA008461DA /* Tabbar.swift */; };
 		A20802A72789AEAA008461DA /* ProFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802832789AEAA008461DA /* ProFileView.swift */; };
-		A20802A82789AEAA008461DA /* PolularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802852789AEAA008461DA /* PolularView.swift */; };
+		A20802A82789AEAA008461DA /* GetMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802852789AEAA008461DA /* GetMoneyView.swift */; };
 		A20802A92789AEAA008461DA /* PolularVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802862789AEAA008461DA /* PolularVideo.swift */; };
 		A20802AA2789AEAA008461DA /* PolularPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802872789AEAA008461DA /* PolularPost.swift */; };
 		A20802AB2789AEAA008461DA /* PolularSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802882789AEAA008461DA /* PolularSpace.swift */; };
@@ -53,7 +53,7 @@
 		A208027E2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FantasyTikTok(iOS)-Bridging-Header.m"; sourceTree = "<group>"; };
 		A20802812789AEAA008461DA /* Tabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
 		A20802832789AEAA008461DA /* ProFileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProFileView.swift; sourceTree = "<group>"; };
-		A20802852789AEAA008461DA /* PolularView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularView.swift; sourceTree = "<group>"; };
+		A20802852789AEAA008461DA /* GetMoneyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMoneyView.swift; sourceTree = "<group>"; };
 		A20802862789AEAA008461DA /* PolularVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularVideo.swift; sourceTree = "<group>"; };
 		A20802872789AEAA008461DA /* PolularPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularPost.swift; sourceTree = "<group>"; };
 		A20802882789AEAA008461DA /* PolularSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolularSpace.swift; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		A20802842789AEAA008461DA /* Polular */ = {
 			isa = PBXGroup;
 			children = (
-				A20802852789AEAA008461DA /* PolularView.swift */,
+				A20802852789AEAA008461DA /* GetMoneyView.swift */,
 				A20802862789AEAA008461DA /* PolularVideo.swift */,
 				A20802872789AEAA008461DA /* PolularPost.swift */,
 				A20802882789AEAA008461DA /* PolularSpace.swift */,
@@ -412,7 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A20802A82789AEAA008461DA /* PolularView.swift in Sources */,
+				A20802A82789AEAA008461DA /* GetMoneyView.swift in Sources */,
 				A20802B32789AEAA008461DA /* TaskRaw.swift in Sources */,
 				A20802BC2789AEAA008461DA /* Comps.swift in Sources */,
 				A20802B52789AEAA008461DA /* LacunchManager.swift in Sources */,
@@ -572,12 +572,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6UB6WM6VQR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FantasyTikTok-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "抖赞DAO";
+				INFOPLIST_KEY_CFBundleDisplayName = "赞团";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,7 +588,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FantasyTikTok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -607,12 +607,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6UB6WM6VQR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FantasyTikTok-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "抖赞DAO";
+				INFOPLIST_KEY_CFBundleDisplayName = "赞团";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -623,7 +623,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FantasyTikTok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -16,15 +16,15 @@ class ProFileViewVM : ObservableObject{
         case message
         case notice
         case mentions
-
+        
         var showText: String{
             switch self {
             case .message:
-                    return "私信"
+                return "私信"
             case .notice:
-                    return "通知"
+                return "通知"
             case .mentions:
-                    return "@提及"
+                return "@提及"
             }
         }
     }
@@ -36,7 +36,7 @@ class ProFileViewVM : ObservableObject{
 
 struct ProFileView: View {
     
- 
+    
     
     @ObservedObject var vm = ProFileViewVM.shared
     @State private var offset : CGFloat = 0
@@ -46,7 +46,7 @@ struct ProFileView: View {
     var body: some View {
         
         
-         
+        
         PF_OffsetScrollView(offset: $offset, content: {
             VStack(alignment: .center, spacing: 24) {
                 cashCard
@@ -56,11 +56,11 @@ struct ProFileView: View {
                 VStack(spacing:24){
                     
                     profiletask
-                   
+                    
                     
                     
                     balance
-                
+                    
                     Rectangle()
                         .frame( height: 1)
                         .foregroundColor(.back1)
@@ -68,7 +68,7 @@ struct ProFileView: View {
                     
                     
                     mydouzan
-                   
+                    
                     Rectangle()
                         .frame( height: 1)
                         .foregroundColor(.back1)
@@ -82,23 +82,23 @@ struct ProFileView: View {
                 }
                 .padding(.vertical,24)
                 .background(Color.Card)
-        
                 
-               
-               
+                
+                
+                
             }
             .padding(.top,24)
-       
-          
+            
+            
         })
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle(Text("Username"))
-        .PF_Navitop(style: self.offset < -6 ? .large : .none, backgroundView: {
-            BlurView()
-        }, TopCenterView: {
-        })
-      
-    
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle(Text("Username"))
+            .PF_Navitop(style: self.offset < -6 ? .large : .none, backgroundView: {
+                BlurView()
+            }, TopCenterView: {
+            })
+        
+        
     }
     
     var toolbox : some View {
@@ -110,19 +110,14 @@ struct ProFileView: View {
             let columns =
             Array(repeating:GridItem(.fixed(w), spacing: 12), count: 4)
             
-                     LazyVGrid(columns: columns, spacing: 12) {
-                         ForEach(0 ..< 8) { item in
-                             VStack{
-                                 ICON(name:"arrow-up-circle-line",fcolor:.MainColor,size:32)
-                                     .padding(.all,12)
-                                     .background(Color.back1)
-                                     .clipShape(Circle())
-                                    Text("工具")
-                                     .mFont(style: .Body_13_R,color: .fc1)
-                             }
-                            
-                         }
-                     }
+            LazyVGrid(columns: columns, spacing: 12) {
+                ForEach(0 ..< 8) { item in
+                   
+                    profileToolBtn(iconname: "external-link-line", title: randomString(3), action: {
+                        
+                    })
+                }
+            }
         }
         .padding(.horizontal,24)
     }
@@ -137,19 +132,14 @@ struct ProFileView: View {
             let columns =
             Array(repeating:GridItem(.fixed(w), spacing: 12), count: 4)
             
-                     LazyVGrid(columns: columns, spacing: 12) {
-                         ForEach(0 ..< 8) { item in
-                             VStack{
-                                 ICON(name:"arrow-up-circle-line",fcolor:.MainColor,size:32)
-                                     .padding(.all,12)
-                                     .background(Color.back1)
-                                     .clipShape(Circle())
-                                    Text("我报名的")
-                                     .mFont(style: .Body_13_R,color: .fc1)
-                             }
-                            
-                         }
-                     }
+            LazyVGrid(columns: columns, spacing: 12) {
+                ForEach(0 ..< 8) { item in
+                    profileToolBtn(iconname: "external-link-line", title: randomString(3), action: {
+                        
+                    })
+                    
+                }
+            }
         }
         .padding(.horizontal,24)
     }
@@ -157,35 +147,10 @@ struct ProFileView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing:12){
                 Spacer().frame(width: 12)
-                HStack{
-                    ICON(name:"checkbox-multiple-line",fcolor:.Card,size:24)
-                    VStack(alignment: .leading, spacing: 4){
-                        Text("补填邀请码")
-                            .mFont(style: .Title_17_B,color: .Card)
-                        Text("轻松领取2000赞铜板")
-                            .mFont(style: .Body_15_R,color: .Card)
-                    }
-                Spacer()
+                profileTaskRaw(title: "补填邀请码", subline: "轻松领取2000赞铜板", iconname: "checkbox-multiple-line") {
                 }
-                .padding(.all,12)
-                .background(Color.Info)
-                .frame(width: SW * 0.7)
-                .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
-                
-                HStack{
-                    ICON(name:"checkbox-multiple-line",fcolor:.Card,size:24)
-                    VStack(alignment: .leading, spacing: 4){
-                        Text("邀请朋友")
-                            .mFont(style: .Title_17_B,color: .Card)
-                        Text("轻松领取2000赞铜板")
-                            .mFont(style: .Body_15_R,color: .Card)
-                    }
-                Spacer()
+                profileTaskRaw(title: "邀请朋友", subline: "轻松领取2000赞铜板", iconname: "checkbox-multiple-line") {
                 }
-                .padding(.all,12)
-                .background(Color.Info)
-                .frame(width: SW * 0.7)
-                .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
                 Spacer().frame(width: 12)
                 
             }
@@ -199,7 +164,7 @@ struct ProFileView: View {
                 
                 Text("赞金币")
                     .mFont(style: .Body_15_R,color: .fc1)
-            Spacer()
+                Spacer()
                 Text(Double.random(in: 0...1000).toCurrencyString)
                     .mFont(style: .Body_15_B,color: .fc1)
             }
@@ -213,7 +178,7 @@ struct ProFileView: View {
                 
                 Text("赞铜板")
                     .mFont(style: .Body_15_R,color: .fc1)
-            Spacer()
+                Spacer()
                 Text(Double.random(in: 0...1000).toCurrencyString)
                     .mFont(style: .Body_15_B,color: .fc1)
             }
@@ -236,7 +201,7 @@ struct ProFileView: View {
                     Spacer()
                     ICON(name: "more-line",fcolor: .fc1,size: 16)
                 }
-                    .padding(.vertical,12)
+                .padding(.vertical,12)
                 
                 HStack(alignment: .top, spacing: 4){
                     Text("可提现")
@@ -255,7 +220,7 @@ struct ProFileView: View {
                 .frame( height: 1)
                 .padding(.horizontal,-12)
                 .foregroundColor(.fc3.opacity(0.1))
-               
+            
             HStack{
                 Text("去做赏金任务")
                     .mFont(style: .Title_17_B,color: .Info)
@@ -265,19 +230,74 @@ struct ProFileView: View {
             .padding(.vertical,12)
         }
         .padding(.horizontal,12)
-            .background(Color.Card)
-            .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
-            .shadow(color: .fc1.opacity(0.1), radius: 12, x: 0, y: 0)
+        .background(Color.Card)
+        .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
+        .shadow(color: .fc1.opacity(0.1), radius: 12, x: 0, y: 0)
         
-            
+        
     }
     
     
-
+    
 }
 
 struct InBoxView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(uistate: UIState.init(tabbarIndex: .profile))
+    }
+}
+
+
+struct profileTaskRaw : View {
+    let title : String
+    let subline : String
+    let iconname : String
+    let action : ()->()
+    
+    var body: some View{
+        Button {
+            action()
+        } label: {
+            HStack{
+                ICON(name:iconname,fcolor:.Card,size:24)
+                VStack(alignment: .leading, spacing: 4){
+                    Text(title)
+                        .mFont(style: .Title_17_B,color: .Card)
+                    Text(subline)
+                        .mFont(style: .Body_15_R,color: .Card)
+                }
+                Spacer()
+            }
+            .padding(.all,12)
+            .background(Color.Info)
+            .frame(width: SW * 0.7)
+            .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
+        }
+
+    
+    }
+}
+
+struct profileToolBtn : View {
+    
+    let iconname : String
+    let title : String
+    let action : ()->()
+    
+    var body: some View{
+        Button {
+            action()
+        } label: {
+            VStack{
+                ICON(name:iconname,fcolor:.MainColor,size:32)
+                    .padding(.all,12)
+                    .background(Color.back1)
+                    .clipShape(Circle())
+                Text(title)
+                    .mFont(style: .Body_13_R,color: .fc1)
+            }
+        }
+
+        
     }
 }
