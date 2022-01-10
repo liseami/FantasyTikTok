@@ -7,14 +7,18 @@
 
 import Foundation
 import UIKit
+import DouyinOpenSDK
 
 
-class AppDelegate: NSObject, UIApplicationDelegate {
+class AppDelegate:  DouyinOpenSDKApplicationDelegate {
     
     
     var window:UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        
+        AppDelegate.sharedInstance()
         
 //        //友盟启动
 //        UM_RUN()
@@ -30,6 +34,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         return true
     }
     
+    
   
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
@@ -42,6 +47,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         if MobClick.handle(url){
             return true
         }
+        
         return true
     }
     

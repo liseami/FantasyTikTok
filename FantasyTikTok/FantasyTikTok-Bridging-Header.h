@@ -8,6 +8,8 @@
 //导入UMAnalytics的OC的头文件
 #import <UMCommon/MobClick.h>
 
+//抖音SDK
+#import <DouyinOpenSDK/DouyinOpenSDKAuth.h>
 
 //全局导入FantasyUI
 #import <FantasyUI/FantasyUI.h>

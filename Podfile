@@ -24,6 +24,8 @@ pod 'FantasyUI', :path => './FantasyUI'
 
 pod 'SDWebImageSwiftUI'
 
+pod 'DouyinOpenSDK', '~> 4.0.0'
+
 end
 
 
