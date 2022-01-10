@@ -21,12 +21,17 @@ struct Tabbar: View {
                     } label: {
                         Rectangle()
                       .hidden()
-                      .overlay(ICON(name: iconname,
-                                    fcolor: selected ?  .MainColor : .fc1,
-                                    size: 36))
+                      .overlay(
+                        VStack(spacing:0){
+                            ICON(name: selected ? iconname + ".selected" : iconname ,
+                                 fcolor: selected ?  .fc1 : .fc2,
+                                        size: 28)
+                        }
+                      )
                     }
                 }
             }
+            .padding(.horizontal,16)
             .background(
                 ZStack{
                     Color.back1.opacity(0.3).ignoresSafeArea()

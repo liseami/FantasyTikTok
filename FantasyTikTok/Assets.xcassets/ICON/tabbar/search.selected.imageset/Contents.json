@@ -1,16 +1,15 @@
 {
   "images" : [
     {
+      "filename" : "search-eye-line.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "search@2x.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "search@2x-1.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }

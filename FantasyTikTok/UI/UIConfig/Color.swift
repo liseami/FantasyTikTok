@@ -27,10 +27,13 @@ extension Color  {
     static let BackGround = Color("BackGround")
     static let Card = Color("Card")
     
+    
+    
     static let Danger = Color("Danger")
     static let Success = Color("Success")
     static let Warning = Color("Warning")
     
+    static let Blue = Color("Blue")
     static let Info = Color("Info")
     static let Purple = Color("Purple")
     

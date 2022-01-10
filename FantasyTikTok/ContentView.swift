@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         
-    
+        
         if !uistate.logged {
             LoginView()
         }else{
@@ -22,14 +22,14 @@ struct ContentView: View {
                 if #available(iOS 15.0, *) {
                     mainViews
                     ///Toolbar
-                    .toolbar {toolbar}
+                        .toolbar {toolbar}
                 }else{
                     mainViews
-                    .navigationBarItems(leading: toolbarLeading, trailing: toolbarTrailing)
+                        .navigationBarItems(leading: toolbarLeading, trailing: toolbarTrailing)
                 }
             }
             .overlay(Tabbar())
-            .overlay(TabbarBtn)
+
             .PF_Sheet(isPresented: $uistate.showSettingView, backColor: .clear, content: {
                 SettingView()
             })
@@ -37,7 +37,7 @@ struct ContentView: View {
             .navigationViewStyle(StackNavigationViewStyle())
             .PF_OverProgressView(loadingState: .none)
         }
-    
+        
         
     }
     
@@ -47,11 +47,13 @@ struct ContentView: View {
         ZStack{
             Color.BackGround.ignoresSafeArea()
             switch uistate.TabbarIndex{
-            ///主页面
+                ///主页面
             case .home :  HomeTaskView()
-            case .light   :  GetMoneyView()
+            case .money   :  GetMoneyView()
             case .search   :  searchView
             case .profile  :  ProFileView()
+            case .pushTask:
+                EmptyView()
             }
         }
         ///Navilink
@@ -75,29 +77,7 @@ struct ContentView: View {
         }
     }
     
-    
-    ///TabbarBtn
-    var TabbarBtn : some View {
-        VStack{
-            Spacer()
-            HStack{
-                Spacer()
-                Button {
-                } label: {
-                    let poluar = uistate.TabbarIndex == .light
-                    Circle()
-                        .foregroundColor( poluar ? .Purple : .MainColor)
-                        .frame(width: SW * 0.13, height: SW * 0.13)
-                        .overlay(ICON(name: poluar ? "list-settings-line" : "add-line",fcolor: .Card,size: 24))
-                        .shadow(color: .fc1.opacity(0.12), radius: 4, x: 0, y: 4)
-                }
-            }
-            .padding(.all, 16)
-            .padding(.bottom,GoldenH)
-        }
-        .ignoresSafeArea(.keyboard, edges: .bottom)
-    }
-    
+
     /// ToolBar
     var toolbar :  some ToolbarContent {
         Group{
@@ -117,20 +97,20 @@ struct ContentView: View {
     }
     
     var searchBtn : some View {
-            HStack(spacing:2){
-                ICON(name: "search",fcolor: .fc2,size: 16)
-                    Text("搜索抖音")
-                        .mFont(style: .Title_17_R,color: .fc2)
-                }
-                .padding(.all,12)
-                .frame(width: SW * 0.68,height: 32)
-                .background(Color.back1
-                .frame(height: 32))
-                .clipShape(Capsule(style: .continuous))
-                .onTapGesture {
-                    madasoft()
-                    SearchManager.shared.showSearchInputView = true
-                }
+        HStack(spacing:2){
+            ICON(name: "search",fcolor: .fc2,size: 16)
+            Text("搜索抖音")
+                .mFont(style: .Title_17_R,color: .fc2)
+        }
+        .padding(.all,12)
+        .frame(width: SW * 0.68,height: 32)
+        .background(Color.back1
+                        .frame(height: 32))
+        .clipShape(Capsule(style: .continuous))
+        .onTapGesture {
+            madasoft()
+            SearchManager.shared.showSearchInputView = true
+        }
     }
     
     
@@ -163,7 +143,7 @@ struct ContentView: View {
             }
             
         }
-       
+        
     }
 }
 

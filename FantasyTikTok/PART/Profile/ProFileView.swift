@@ -195,7 +195,7 @@ struct ProFileView: View {
         VStack(spacing:0){
             VStack(spacing:0){
                 HStack{
-                    Text("抖赞钱包")
+                    Text("赞团提现卡")
                         .PF_Leading()
                         .mFont(style: .Title_19_B,color: .MainColor)
                     Spacer()
@@ -232,7 +232,7 @@ struct ProFileView: View {
         .padding(.horizontal,12)
         .background(Color.Card)
         .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
-        .shadow(color: .fc1.opacity(0.1), radius: 12, x: 0, y: 0)
+        .PF_Shadow(color: .fc1, style: .s700)
         
         
     }

@@ -21,23 +21,26 @@ class UIState : ObservableObject{
     // Tabar
     @Published var TabbarIndex : tabbarItemEnum = .home
     @Published var TabbarProgress : Double = 0
-    var tabbarItem : [tabbarItemEnum] = [.home,.light,.search,.profile]
+    var tabbarItem : [tabbarItemEnum] = [.home,.money,.pushTask,.search,.profile]
     
     enum tabbarItemEnum {
         case home
-        case light
+        case money
         case search
+        case pushTask
         case profile
         var iconname : String{
             switch self {
             case .home:
                 return "home"
-            case .light:
-                return "light"
+            case .money:
+                return "money"
+            case .pushTask :
+                return "pushTask"
             case .search:
                 return "search"
             case .profile :
-                return "profile"
+                return "user"
             }
         }
     }
