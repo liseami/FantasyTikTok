@@ -17,15 +17,21 @@ struct Tabbar: View {
                     let selected = tabitem == uistate.TabbarIndex
                     let iconname = tabitem.iconname
                     Button {
-                        uistate.TabbarIndex = tabitem
+                        if tabitem == .pushTask{
+                            uistate.showPushTaskSheet = true
+                        }else{
+                            uistate.TabbarIndex = tabitem
+                        }
                     } label: {
                         Rectangle()
                       .hidden()
                       .overlay(
-                        VStack(spacing:0){
+                        VStack(spacing:2){
                             ICON(name: selected ? iconname + ".selected" : iconname ,
                                  fcolor: selected ?  .fc1 : .fc2,
                                         size: 28)
+                            Text(tabitem.title)
+                                .mFont(style: .Caption_9_R,color: selected ?  .fc1 : .fc2)
                         }
                       )
                     }
@@ -38,7 +44,7 @@ struct Tabbar: View {
                     BlurView().ignoresSafeArea()
                 }
                 )
-            .frame( height: GoldenH, alignment: .center)
+            .frame( height: GoldenH + 8, alignment: .center)
             .overlay(Divider().background(Color.fc2).opacity(0.3),alignment: .top)
             .overlay(
             ProgressView.init(value:uistate.TabbarProgress )

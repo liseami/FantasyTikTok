@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import FantasyUI
+ 
 
 class TaskViewModule : ObservableObject{
     static let shared  = TaskViewModule()

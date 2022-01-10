@@ -29,9 +29,11 @@ struct ContentView: View {
                 }
             }
             .overlay(Tabbar())
-
             .PF_Sheet(isPresented: $uistate.showSettingView, backColor: .clear, content: {
                 SettingView()
+            })
+            .PF_Sheet(isPresented: $uistate.showPushTaskSheet, backColor: .clear, content: {
+                PushTaskSheet()
             })
             .accentColor(.fc1)
             .navigationViewStyle(StackNavigationViewStyle())
@@ -50,7 +52,7 @@ struct ContentView: View {
                 ///主页面
             case .home :  HomeTaskView()
             case .money   :  GetMoneyView()
-            case .search   :  searchView
+            case .search   :   SearchView()
             case .profile  :  ProFileView()
             case .pushTask:
                 EmptyView()
@@ -67,15 +69,7 @@ struct ContentView: View {
         })
     }
     
-    @ViewBuilder
-    var searchView : some View {
-        if uistate.TabbarIndex == .search {
-            SearchView()
-                .toolbar {toolbarSearchBtn}
-        }else{
-            SearchView()
-        }
-    }
+   
     
 
     /// ToolBar
@@ -89,12 +83,7 @@ struct ContentView: View {
             }
         }
     }
-    
-    var toolbarSearchBtn : some ToolbarContent {
-        ToolbarItem {
-            searchBtn
-        }
-    }
+ 
     
     var searchBtn : some View {
         HStack(spacing:2){

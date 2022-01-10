@@ -6,119 +6,98 @@
 //
 
 import SwiftUI
+import FantasyUI
+
+
+class SearchManager : ObservableObject{
+    
+    static let shared  = SearchManager()
+    
+    @Published var showSearchInputView : Bool = false
+    enum searchResultSwitch : MTPageSegmentProtocol {
+        case hot
+        case music
+        case tag
+        case people
+        case video
+       
+        var showText: String{
+            switch self {
+            case .hot:
+               return "热点"
+            case .music:
+                return "话题"
+            case .tag:
+                return "音乐"
+            case .people:
+                return "达人"
+            case .video:
+                return "视频"
+            }
+        }
+    }
+    
+    
+    @Published var searchResultTab : searchResultSwitch = .hot
+    var tabitems : [searchResultSwitch] = [.hot,.music,.tag,.people,.video]
+}
+
 
 struct SearchView: View {
  
     @State private var startToSearch : Bool = false
+    
     @State private var offset : CGFloat = 0
+    @State private var pageIndex : Int = 0
+    
     @ObservedObject var vm = SearchManager.shared
+    
     
     var body: some View {
         
         
-        PF_OffsetScrollView(offset: $offset) {
-            
-            VStack(spacing:24){
-                
-                
-                hotSearchContent
-                
-                hotUser
-                
-                hotPost
-                
-                Spacer()
-                
+        VStack(spacing:0){
+            MT_PageSegmentView(titles: vm.tabitems, offset: $offset)
+            MT_PageScrollowView(offset: $offset) {
+                mainViews
             }
-            .padding(.vertical,24)
-           
-           
-          
         }
-        .PF_Navitop(style: self.offset < -6 ? .large : .none, backgroundView: {
-            BlurView()
-        }, TopCenterView: {
-        })
+        .frame(width: SW)
         .navigationBarTitleDisplayMode(.inline)
-        .PF_Navilink(isPresented: $vm.showSearchInputView) {
-            SearchInputView()
+        .PF_Navitop(style: .large,showDivider: false) {
+            Color.BackGround
+        } TopCenterView: {
+            Text("抖音大盘")
+                .mFont(style: .Title_17_B,color: .fc1)
         }
-        .background(Color.Card.ignoresSafeArea())
-
-    }
+        }
     
-    var hotPost : some View{
-        VStack{
-            HStack{
-                Text("附近推文")
-                    .mFont(style: .Title_19_B,color: .fc1)
-                Text("附近的用户")
-                    .mFont(style: .Title_19_B,color: .fc3)
-                Spacer()
-                Text("过滤")
-                    .mFont(style: .Body_15_B,color: .MainColor)
-            }
-            .padding(.horizontal,24)
-            
-                VStack(spacing:12){
-                    ForEach(0..<12){index in
-                        TaskRaw(taskbounty:Double.random(in: 0...100), task: randomString(4), postcontent: randomString(140))
+    @ViewBuilder
+    var mainViews : some View {
+        HStack(spacing: 0) {
+            Group {
+                ScrollView {
+                    LazyVStack(spacing:12){
+                        Spacer().frame(width: 1, height: 1)
+                        ForEach(0..<12){ index in
+                            Hottag()
+                        }
+                        Spacer().frame(width: 1, height: 80)
                     }
+                    .padding(.all,0)
                 }
-                .padding(.horizontal,8)
-              
-        }
-        
-    }
-    
-    
-    var hotUser : some View{
-        VStack{
-            HStack{
-                Text("热门搜索账号")
-                    .mFont(style: .Title_19_B,color: .fc1)
-                Spacer()
-                Text("显示全部")
-                    .mFont(style: .Body_15_B,color: .MainColor)
-            }
-            .padding(.horizontal,24)
-            
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing:12){
-                    Spacer().frame(width: 12)
-                    ForEach(0..<12){index in
-                        hotUserCard(username: randomString(6))
-                    }
-                }
-              
-            }
-        }
-    
-    }
-    var hotSearchContent : some View {
-        VStack{
-            Text("推圈搜索趋势")
-                .mFont(style: .Title_19_B,color: .fc1)
-                .PF_Leading()
-            
-            let w = SW / 2
-            let columns =
-            Array(repeating:GridItem(.adaptive(minimum: w, maximum: w), spacing: 0), count: 2)
-            
-            LazyVGrid(columns: columns, alignment: .center, spacing: 12) {
                 
-                ForEach(0..<6){index in
-                    HStack(spacing:12){
-                        Text(randomString(6))
-                            .mFont(style: .Title_17_R,color: .fc2)
-                        Spacer()
-                    }
-                }
+                PolularVideo()
+                PolularPost()
+                PolularSpace()
+                PolularSpace()
             }
+            .frame(width: SW)
+            
         }
-        .padding(.horizontal,24)
     }
-}
+    
+    }
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
@@ -126,32 +105,37 @@ struct SearchView_Previews: PreviewProvider {
     }
 }
 
-
-struct hotUserCard : View{
-    let username : String
+struct Hottag : View{
     var body: some View{
-        VStack(spacing:4){
-            Image("liseamiAvatar")
+        
+        HStack(spacing:12){
+            Image("\(Int.random(in: 1...12))")
                 .resizable()
                 .scaledToFill()
                 .frame(width: SW * 0.16, height: SW * 0.16)
-                .clipShape(Circle())
-            Text(username)
-                .mFont(style: .Body_15_B,color: .fc1)
-            Text("热门")
-                .mFont(style: .Body_13_R,color: .fc3)
-         
-            Spacer().frame(width: 0, height: 16)
-            
-            Text("关注")
-                .mFont(style: .Body_15_B,color: .white)
-                .frame(maxWidth:SW * 0.24)
-                .padding(.vertical,2)
-                .background(Color.MainColor)
-                .cornerRadius(4)
-            
+                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+            VStack(alignment: .leading, spacing: 6){
+                Text("影响力指数" + "  \(Int.random(in: 10000...1000000))")
+                    .PF_Leading()
+                    .mFont(style: .Body_12_B,color: .fc2)
+            Text("#" + randomString(12))
+                    .mFont(style: .Body_15_B,color: .fc1)
+            Text("日播放" + "\(Double.random(in: 1...12))" + "亿")
+                    .mFont(style: .Caption_10_R,color: .fc3)
         }
-        .padding(.all,16)
-        .overlay(RoundedRectangle(cornerRadius: 12, style: .continuous).strokeBorder(lineWidth: 0.5, antialiased: false).foregroundColor(.back1))
+       
+        Spacer()
+            ICON(sysname: "play.fill",fcolor: .fc1,size: 16)
+                .padding(.all,6)
+                .background(Color.fc3.opacity(0.1))
+                .clipShape(Circle())
     }
+        .padding(.all,12)
+        .background(Color.Card)
+        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+        .padding(.horizontal,12)
+        
 }
+}
+
+

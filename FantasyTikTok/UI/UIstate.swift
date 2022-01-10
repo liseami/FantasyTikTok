@@ -17,8 +17,10 @@ class UIState : ObservableObject{
         self.TabbarIndex = tabbarIndex
     }
     
+    
     @Published var logged : Bool = true
     // Tabar
+    @Published var showPushTaskSheet : Bool = false
     @Published var TabbarIndex : tabbarItemEnum = .home
     @Published var TabbarProgress : Double = 0
     var tabbarItem : [tabbarItemEnum] = [.home,.money,.pushTask,.search,.profile]
@@ -41,6 +43,21 @@ class UIState : ObservableObject{
                 return "search"
             case .profile :
                 return "user"
+            }
+        }
+        var title : String{
+            
+            switch self {
+            case .home:
+                return "首页"
+            case .money:
+                return "收入"
+            case .search:
+                return "趋势"
+            case .pushTask:
+                return "发布"
+            case .profile:
+                return  "我的"
             }
         }
     }

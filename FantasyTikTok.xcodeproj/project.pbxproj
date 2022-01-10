@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31A1ECD2B2D90631290FECC1 /* Pods_FantasyTikTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7512F886AD7F9FC24EEB953B /* Pods_FantasyTikTok.framework */; };
+		A20199B6278C0D1600599C29 /* PushTaskSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20199B5278C0D1600599C29 /* PushTaskSheet.swift */; };
 		A20802702789AE26008461DA /* FantasyTikTokApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208026F2789AE26008461DA /* FantasyTikTokApp.swift */; };
 		A20802722789AE26008461DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802712789AE26008461DA /* ContentView.swift */; };
 		A20802742789AE28008461DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20802732789AE28008461DA /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		7512F886AD7F9FC24EEB953B /* Pods_FantasyTikTok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FantasyTikTok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20199B5278C0D1600599C29 /* PushTaskSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTaskSheet.swift; sourceTree = "<group>"; };
 		A208026C2789AE26008461DA /* FantasyTikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyTikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A208026F2789AE26008461DA /* FantasyTikTokApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyTikTokApp.swift; sourceTree = "<group>"; };
 		A20802712789AE26008461DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -138,12 +140,12 @@
 			isa = PBXGroup;
 			children = (
 				A20802812789AEAA008461DA /* Tabbar.swift */,
+				A20802912789AEAA008461DA /* Home */,
 				A20802822789AEAA008461DA /* Message&Notice */,
 				A20802842789AEAA008461DA /* Polular */,
 				A208028A2789AEAA008461DA /* Search */,
 				A208028D2789AEAA008461DA /* Profile */,
 				A208028F2789AEAA008461DA /* Setting */,
-				A20802912789AEAA008461DA /* Home */,
 				A20802952789AEAA008461DA /* Login */,
 			);
 			path = PART;
@@ -199,6 +201,7 @@
 				A20802932789AEAA008461DA /* HomeTaskView.swift */,
 				A20802922789AEAA008461DA /* PostDetailView.swift */,
 				A20802942789AEAA008461DA /* TaskRaw.swift */,
+				A20199B5278C0D1600599C29 /* PushTaskSheet.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				A20802C82789AEFD008461DA /* AppDelegate.swift in Sources */,
 				A20802B42789AEAA008461DA /* LoginView.swift in Sources */,
 				A20802B62789AEAA008461DA /* MT_PageSegmentView.swift in Sources */,
+				A20199B6278C0D1600599C29 /* PushTaskSheet.swift in Sources */,
 				A20802AC2789AEAA008461DA /* PolularPhoto.swift in Sources */,
 				A20802BA2789AEAA008461DA /* PublicFuncs.swift in Sources */,
 				A20802BB2789AEAA008461DA /* Buttons.swift in Sources */,
