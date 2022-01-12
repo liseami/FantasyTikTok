@@ -17,7 +17,7 @@ class UIState : ObservableObject{
         self.TabbarIndex = tabbarIndex
     }
     
-    
+    @Published var app : UIApplication?
     @Published var logged : Bool = true
     // Tabar
     @Published var showPushTaskSheet : Bool = false
@@ -68,5 +68,8 @@ class UIState : ObservableObject{
     
     ///post
     @Published var showPostDetailView : Bool = false
+    
+    ///抖音账户
+    @Published var showTikTokAccountView : Bool = false
     
 }

@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import FantasyUI
+import WebKit
 
 struct ContentView: View {
     
@@ -19,14 +21,23 @@ struct ContentView: View {
             LoginView()
         }else{
             NavigationView {
-                if #available(iOS 15.0, *) {
-                    mainViews
-                    ///Toolbar
-                        .toolbar {toolbar}
-                }else{
-                    mainViews
-                        .navigationBarItems(leading: toolbarLeading, trailing: toolbarTrailing)
+                
+                
+                Group{
+                    if #available(iOS 15.0, *) {
+                        mainViews
+                        ///Toolbar
+                            .toolbar {toolbar}
+                    }else{
+                        mainViews
+                            .navigationBarItems(leading: toolbarLeading, trailing: toolbarTrailing)
+                    }
                 }
+                .PF_Navilink(isPresented: $uistate.showTikTokAccountView) {
+                    TikTokAccountView()
+                }
+           
+                
             }
             .overlay(Tabbar())
             .PF_Sheet(isPresented: $uistate.showSettingView, backColor: .clear, content: {
@@ -39,6 +50,13 @@ struct ContentView: View {
             .navigationViewStyle(StackNavigationViewStyle())
             .PF_OverProgressView(loadingState: .none)
         }
+        
+        
+
+      
+           
+        
+        
         
         
     }
@@ -141,3 +159,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+

@@ -17,10 +17,16 @@
 	<string>aw6gq77f1segkm0l</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>douyinv1opensdk</string>
 		<string>douyinopensdk</string>
 		<string>douyinsharesdk</string>
 		<string>snssdk1128</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>MiSans-Semibold.ttf</string>

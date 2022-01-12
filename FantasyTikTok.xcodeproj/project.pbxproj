@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		31A1ECD2B2D90631290FECC1 /* Pods_FantasyTikTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7512F886AD7F9FC24EEB953B /* Pods_FantasyTikTok.framework */; };
 		A20199B6278C0D1600599C29 /* PushTaskSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20199B5278C0D1600599C29 /* PushTaskSheet.swift */; };
+		A20199B8278D1A1700599C29 /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20199B7278D1A1700599C29 /* ControllerView.swift */; };
+		A20199C0278E6F0000599C29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20199BF278E6F0000599C29 /* SceneDelegate.swift */; };
+		A20199C2278E813700599C29 /* TikTokAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20199C1278E813700599C29 /* TikTokAccountView.swift */; };
 		A20802702789AE26008461DA /* FantasyTikTokApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208026F2789AE26008461DA /* FantasyTikTokApp.swift */; };
 		A20802722789AE26008461DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802712789AE26008461DA /* ContentView.swift */; };
 		A20802742789AE28008461DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20802732789AE28008461DA /* Assets.xcassets */; };
@@ -47,6 +50,9 @@
 /* Begin PBXFileReference section */
 		7512F886AD7F9FC24EEB953B /* Pods_FantasyTikTok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FantasyTikTok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20199B5278C0D1600599C29 /* PushTaskSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTaskSheet.swift; sourceTree = "<group>"; };
+		A20199B7278D1A1700599C29 /* ControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
+		A20199BF278E6F0000599C29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A20199C1278E813700599C29 /* TikTokAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokAccountView.swift; sourceTree = "<group>"; };
 		A208026C2789AE26008461DA /* FantasyTikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyTikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A208026F2789AE26008461DA /* FantasyTikTokApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyTikTokApp.swift; sourceTree = "<group>"; };
 		A20802712789AE26008461DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 		A208026E2789AE26008461DA /* FantasyTikTok */ = {
 			isa = PBXGroup;
 			children = (
+				A20199BF278E6F0000599C29 /* SceneDelegate.swift */,
 				A20802C62789AEFD008461DA /* AppDelegate.swift */,
 				A20802C72789AEFD008461DA /* DefultStore.swift */,
 				A208026F2789AE26008461DA /* FantasyTikTokApp.swift */,
@@ -191,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				A20802902789AEAA008461DA /* SettingView.swift */,
+				A20199C1278E813700599C29 /* TikTokAccountView.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 				A208029B2789AEAA008461DA /* WebView.swift */,
 				A208029C2789AEAA008461DA /* MT_PageScrollowView.swift */,
 				A208029D2789AEAA008461DA /* PF_TextField.swift */,
+				A20199B7278D1A1700599C29 /* ControllerView.swift */,
 			);
 			path = UIKitViews;
 			sourceTree = "<group>";
@@ -417,6 +426,7 @@
 			files = (
 				A20802A82789AEAA008461DA /* GetMoneyView.swift in Sources */,
 				A20802B32789AEAA008461DA /* TaskRaw.swift in Sources */,
+				A20199C2278E813700599C29 /* TikTokAccountView.swift in Sources */,
 				A20802BC2789AEAA008461DA /* Comps.swift in Sources */,
 				A20802B52789AEAA008461DA /* LacunchManager.swift in Sources */,
 				A20802AA2789AEAA008461DA /* PolularPost.swift in Sources */,
@@ -428,6 +438,7 @@
 				A20802BE2789AEAA008461DA /* Color.swift in Sources */,
 				A20802C92789AEFD008461DA /* DefultStore.swift in Sources */,
 				A20802722789AE26008461DA /* ContentView.swift in Sources */,
+				A20199B8278D1A1700599C29 /* ControllerView.swift in Sources */,
 				A20802A72789AEAA008461DA /* ProFileView.swift in Sources */,
 				A20802B12789AEAA008461DA /* PostDetailView.swift in Sources */,
 				A20802AE2789AEAA008461DA /* SearchInputView.swift in Sources */,
@@ -443,6 +454,7 @@
 				A20802BB2789AEAA008461DA /* Buttons.swift in Sources */,
 				A20802A62789AEAA008461DA /* Tabbar.swift in Sources */,
 				A20802BD2789AEAA008461DA /* Font.swift in Sources */,
+				A20199C0278E6F0000599C29 /* SceneDelegate.swift in Sources */,
 				A20802AD2789AEAA008461DA /* SearchView.swift in Sources */,
 				A20802B22789AEAA008461DA /* HomeTaskView.swift in Sources */,
 				A20802B92789AEAA008461DA /* PF_TextField.swift in Sources */,
@@ -593,7 +605,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FantasyTikTok;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.fantasytiktok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "FantasyTikTok/FantasyTikTok-Bridging-Header.h";
@@ -628,7 +640,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FantasyTikTok;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.fantasytiktok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "FantasyTikTok/FantasyTikTok-Bridging-Header.h";
