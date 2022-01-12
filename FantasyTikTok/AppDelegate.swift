@@ -45,53 +45,7 @@ class AppDelegate :NSObject, UIApplicationDelegate,DouyinOpenSDKLogDelegate{
         return true
     }
     
-    
-    
-//
-//
-//    ///抖音唤起本App
-//    ///options
-//    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-//        //抖音OpenURL
-//
-//        if tiktok.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String, annotation: options[UIApplication.OpenURLOptionsKey.annotation]){
-//            UIState.shared.douyincode = "UIApplication.OpenURLOptionsKey"
-//            madaSuccess()
-//            return true
-//        }
-//        return false
-//    }
-//
-//
-//    ///抖音唤起本App
-//    ///sourceApplication
-//    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-//
-//        if tiktok.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
-//        {
-//            UIState.shared.douyincode = "sourceApplication"
-//            madaSuccess()
-//            return true
-//        }
-//        return false
-//    }
-//
-//
-////    /抖音唤起本App
-////    /handleOpen
-//    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
-//        if tiktok.application(application, open: url, sourceApplication: nil, annotation: ""){
-//            madaSuccess()
-//            UIState.shared.douyincode = "handleOpen"
-//            return true
-//        }
-//        return false
-//    }
-//
 
-
-    
-    
     
 //    SceneDelegate
     func application(

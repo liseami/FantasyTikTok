@@ -12,6 +12,8 @@
 		A20199B8278D1A1700599C29 /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20199B7278D1A1700599C29 /* ControllerView.swift */; };
 		A20199C0278E6F0000599C29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20199BF278E6F0000599C29 /* SceneDelegate.swift */; };
 		A20199C2278E813700599C29 /* TikTokAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20199C1278E813700599C29 /* TikTokAccountView.swift */; };
+		A20199C6278E855900599C29 /* ApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20199C4278E855900599C29 /* ApiTest.swift */; };
+		A20199C7278E855900599C29 /* HTTPConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20199C5278E855900599C29 /* HTTPConfig.swift */; };
 		A20802702789AE26008461DA /* FantasyTikTokApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208026F2789AE26008461DA /* FantasyTikTokApp.swift */; };
 		A20802722789AE26008461DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20802712789AE26008461DA /* ContentView.swift */; };
 		A20802742789AE28008461DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20802732789AE28008461DA /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		A20199B7278D1A1700599C29 /* ControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
 		A20199BF278E6F0000599C29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A20199C1278E813700599C29 /* TikTokAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokAccountView.swift; sourceTree = "<group>"; };
+		A20199C4278E855900599C29 /* ApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiTest.swift; sourceTree = "<group>"; };
+		A20199C5278E855900599C29 /* HTTPConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPConfig.swift; sourceTree = "<group>"; };
 		A208026C2789AE26008461DA /* FantasyTikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyTikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A208026F2789AE26008461DA /* FantasyTikTokApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyTikTokApp.swift; sourceTree = "<group>"; };
 		A20802712789AE26008461DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A20199C3278E854A00599C29 /* NETWORK */ = {
+			isa = PBXGroup;
+			children = (
+				A20199C4278E855900599C29 /* ApiTest.swift */,
+				A20199C5278E855900599C29 /* HTTPConfig.swift */,
+			);
+			path = NETWORK;
+			sourceTree = "<group>";
+		};
 		A20802632789AE26008461DA = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +141,7 @@
 		A208026E2789AE26008461DA /* FantasyTikTok */ = {
 			isa = PBXGroup;
 			children = (
+				A20199C3278E854A00599C29 /* NETWORK */,
 				A20199BF278E6F0000599C29 /* SceneDelegate.swift */,
 				A20802C62789AEFD008461DA /* AppDelegate.swift */,
 				A20802C72789AEFD008461DA /* DefultStore.swift */,
@@ -441,10 +455,12 @@
 				A20199B8278D1A1700599C29 /* ControllerView.swift in Sources */,
 				A20802A72789AEAA008461DA /* ProFileView.swift in Sources */,
 				A20802B12789AEAA008461DA /* PostDetailView.swift in Sources */,
+				A20199C7278E855900599C29 /* HTTPConfig.swift in Sources */,
 				A20802AE2789AEAA008461DA /* SearchInputView.swift in Sources */,
 				A208027F2789AE96008461DA /* FantasyTikTok(iOS)-Bridging-Header.m in Sources */,
 				A20802702789AE26008461DA /* FantasyTikTokApp.swift in Sources */,
 				A20802A92789AEAA008461DA /* PolularVideo.swift in Sources */,
+				A20199C6278E855900599C29 /* ApiTest.swift in Sources */,
 				A20802C82789AEFD008461DA /* AppDelegate.swift in Sources */,
 				A20802B42789AEAA008461DA /* LoginView.swift in Sources */,
 				A20802B62789AEAA008461DA /* MT_PageSegmentView.swift in Sources */,

@@ -39,10 +39,10 @@ struct LoginView: View {
                 Spacer()
                 
                 VStack{
-                    MainButton(title: "链接抖音账户",iconname: "WeiboLogo") {
+                    MainButton(title: "链接抖音账户",iconname: "tiktok") {
                         linkTwitter()
                     }
-                    Text("基于公司抖音Api打造")
+                    Text(" 基于字节跳动TikTokOpenApi打造")
                         .mFont(style: .Body_15_R,color: .fc3)
                 }
                 .ifshow(step == 0, animation: .spring(), transition: .move(edge: .bottom))

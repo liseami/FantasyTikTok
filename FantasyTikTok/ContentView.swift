@@ -33,11 +33,7 @@ struct ContentView: View {
                             .navigationBarItems(leading: toolbarLeading, trailing: toolbarTrailing)
                     }
                 }
-                .PF_Navilink(isPresented: $uistate.showTikTokAccountView) {
-                    TikTokAccountView()
-                }
-           
-                
+
             }
             .overlay(Tabbar())
             .PF_Sheet(isPresented: $uistate.showSettingView, backColor: .clear, content: {
